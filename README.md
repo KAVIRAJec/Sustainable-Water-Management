@@ -21,13 +21,13 @@ The main components of the system include:
 
 ## Repository Structure
 
-- /esp_code: Contains the Arduino code for the ESP32 microcontroller. It includes the necessary libraries and implements the logic for sensor readings, control actions, and data transmission to the XAMPP server.
+- /water_management_code: Contains the Arduino code for the ESP32 microcontroller. It includes the necessary libraries and implements the logic for sensor readings, control actions, and data transmission to the XAMPP server.
 - /xampp_web_page_code: Contains the PHP files and MySQL database setup required for hosting the local web server. It includes scripts for data storage, retrieval, and web page rendering.Contains the HTML and CSS files responsible for the user interface design and interactive elements. It defines the layout, styles, and dynamic behavior of the web page.
 
 ## Usage
 
 - Set up the XAMPP server on your local machine and configure the MySQL database according to the provided instructions in /xampp_web_page_code.
-- Connect the ESP32 microcontroller to the appropriate sensors (ultrasonic, flow, and solenoid valve) following the wiring diagram provided in /ESP32_Code.
+- Connect the ESP32 microcontroller to the appropriate sensors (ultrasonic, flow, and solenoid valve) following the wiring diagram provided in /water_management_code.
 - Upload the Arduino code from /ESP32_Code to the ESP32 microcontroller using the Arduino IDE or platform of your choice.
 Copy the PHP files from /xampp_web_page_code to the appropriate directory in your XAMPP installation.
 - Modify the necessary parameters in the Arduino code and PHP files to match your local server settings, database credentials, and sensor pin connections.
